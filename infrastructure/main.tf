@@ -4,12 +4,12 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.0"
+      version = "~> 6.0"
     }
   }
 
   cloud {
-    organization = "platform-engineering-demo-milan"   # 👈 YOUR ORG NAME
+    organization = "platform-engineering-demo-milan"   
     workspaces {
       name = "cnc-logging-dev"
     }
